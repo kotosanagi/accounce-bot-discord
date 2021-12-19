@@ -5,7 +5,7 @@ from os import getenv
 
 client = discord.Client()
 
-#起動時処理
+# 起動時処理
 @client.event
 async def on_ready():
     print("Ready!")
@@ -41,6 +41,3 @@ token = getenv('DISCORD_BOT_TOKEN')
 
 print("token:", token)
 client.run(token)
-
-
-
